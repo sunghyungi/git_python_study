@@ -22,3 +22,9 @@ print(t_list)
 print()
 for t in t_list[0:len(t_list)]:
     print("{} type {}".format(t, type(t)))
+
+
+# tuple1[1] = 5
+print(len(tuple1))
+print(tuple1.index(2))
+print(tuple1.count(3))
