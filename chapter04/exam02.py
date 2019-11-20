@@ -2,9 +2,16 @@ import random as rnd
 
 
 def bubble_sort(random_list):
-    for t in range(0, len(random_list)):
-        print(t)
-    # todo
+    for i in range(0, len(random_list)-1):
+        for t in range(0, len(random_list)-1-i):
+            if random_list[t]> random_list[t+1]:
+                random_list[t], random_list[t+1] = random_list[t+1], random_list[t]
+                # swap = random_list[t]
+                # random_list[t] = random_list[t+1]
+                # random_list[t+1] = swap
+
+    return random_list
+# todo
 
 
 if __name__ == "__main__":
