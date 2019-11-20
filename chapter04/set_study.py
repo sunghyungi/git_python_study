@@ -5,7 +5,7 @@ from chapter04.exam02 import bubble_sort
 
 
 def lotto_generator():
-    # rnd.seed(1)
+    rnd.seed(1)
     lotto_num = set()
     while len(lotto_num) < 6:
         lotto_num.add(rnd.randint(1, 46))
