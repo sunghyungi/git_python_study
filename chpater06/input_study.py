@@ -3,4 +3,4 @@ area = float(b) ** 2
 round = int(b) * 4
 print("정사각형의 넓이는 : {}".format(area))
 print("정사각형의 둘레는 : {}".format(round))
-print("넓이둘레")
+print("넓이 : {}, 둘레 : {}".format(area,round))
