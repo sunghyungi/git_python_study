@@ -34,4 +34,4 @@ if __name__ == "__main__":
     binary_num = bubble_sort(binary_list())
     print(binary_num)
 
-    binary_search(binary_num, 4)
+    binary_search(binary_num, 98)
