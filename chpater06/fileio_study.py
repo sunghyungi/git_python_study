@@ -1,5 +1,5 @@
 try:
-    f = open("/home/shk/다운로드/github/git_python_study/chpater06/print_study.py","r")
+    f = open("/home/shk/다운로드/github/git_python_study/chapter06/print_study.py","r")
     print(f)
     data = f.read()
     print(data)
