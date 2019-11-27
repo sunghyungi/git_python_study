@@ -27,12 +27,15 @@ def checkNum(num):
 
 
 def randomNum():
-    number = set()
-    while len(number) < 7:
-        number.add(random.randint(1, 45))
+    lottoList = []
+    for i in range(0,5):
+        number = set()
+        while len(number) < 7:
+            number.add(random.randint(1, 45))
 
-    lotto_num = [[list(number)[i] for i in range(0, 6)], list(number)[6]]
-    return lotto_num
+        lotto_num = [[list(number)[i] for i in range(0, 6)], list(number)[6]]
+        lottoList.append(lotto_num)
+    return lottoList
 
 
 def countNum(num):
@@ -53,15 +56,11 @@ if __name__ == "__main__":
     lottoNum = [[19, 23, 28, 37, 42, 45], 2]
 
     a = randomNum()
-    print(a)
-    countNum(a)
-    a_rank = checkNum(a)
-    print("이번주 당신의 로또는 {}입니다.".format(a_rank))
+    for i in range(0, 5):
+        print(a[i])
+        countNum(a[i])
+        a_rank = checkNum(a[i])
+        print("이번주 당신의 로또는 {}입니다.\n".format(a_rank))
 
-    b = randomNum()
-    print(b)
-    countNum(b)
-    b_rank = checkNum(b)
-    print("이번주 당신의 로또는 {}입니다.".format(b_rank))
 
 
